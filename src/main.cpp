@@ -1,8 +1,15 @@
 #include <iostream>
+#include "../inc/greed.hpp"
 
 int main() {
 
-    std::cout << "Hello World!" << '\n';
+    Greed opa;
+
+    opa.insertClothes();
+    opa.insertClothes();
+    opa.insertClothes();
+
+    opa.init();
 
     return 0;
 

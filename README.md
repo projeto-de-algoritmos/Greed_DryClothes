@@ -1,5 +1,5 @@
 
-# Greed_temp
+# Greed_DryClothes
 
 **Número da Lista**: 3<br>
 **Conteúdo da Disciplina**: Greed<br>
@@ -15,11 +15,13 @@
 
 ## Sobre
 
-
-
+O projeto tem a implementação de pequena empresa de lavanderia chamada DryClothes, onde tem como início das operações às 8 horas e termina às 17 horas. Os clientes deixam na lavanderia seu nome, quantidade e o tempo que podem buscar seus conjuntos de roupas e tecidos. Com a ajuda do algoritmo ganancioso minimize lateness, iremos otimizar a ordem do trabalho na empresa.
 
 ## Screenshots
 
+![mapaLista](doc/greed1.png)
+
+![mapaOtimização](doc/greed2.png)
 
 ## Instalação
 **Linguagem**: C++<br>
@@ -31,7 +33,7 @@ De preferência, para não ocorrer problemas, use o Ubuntu.
 
 Para clonar:
 
-`git clone https://github.com/projeto-de-algoritmos/`
+`git clone https://github.com/projeto-de-algoritmos/Greed_DryClothes.git`
 
 Para compilar o programa:
 
@@ -46,7 +48,15 @@ Para limpar os arquivos .o e bin do programa:
 `make clean`
 
 ## Uso
+Primeiro compile o programa com o `make` e depois execute o programa com `make run` , vai apresentar-se na tela inicial um menu, onde o usuário pode escolher inserir conjunto de roupas, listar pedidos e gerar otimização.
 
+Na opção 1, você coloca o Nome (sem sobrenome e não composto), número de conjunto de roupas, e o prazo estimado pelo empregado.
+
+Na opção 2, irá mostrar uma lista das informações de cada pedido do cliente, onde nota-se que o campo Tempo ideal de lavagem será a quantidade necessario para lavar o conjunto.
+
+Depois de inserido a quantidade desejada de roupas e tecidos, a opção 3 serve para gerar a otimização da ordem dos serviços sobre os conjuntos. Onde irá apresentar o nome do cliente, dia e horário para o cliente resgatar sua propriedade, e também, o atraso relacionado a estimativa.
+
+Por fim a opção 0 para sair do programa.
 
 ## Outros
 Quando executar o programa no CLI, use-o em tela cheia para melhor aproveitamento do mesmo.

@@ -29,9 +29,9 @@ void Greed::insertClothes() {
     std::cout << "Insira o nome do solicitante: ";
     std::cin >> nameValue;
     std::cout << "Insira o numero de conjunto de roupas: ";
-    std::cin >> sizeValue;
+    sizeValue = getInput();
     std::cout << "Insira o prazo do horario para entrega: ";
-    std::cin >> timeValue;
+    timeValue = getInput();
 
     nome[i] = nameValue;
     size[i] = sizeValue*3;
@@ -44,7 +44,7 @@ void Greed::listClothes() {
     for(int j=0; j<MAX; j++) if(size[j] != 0) totalClothes++;
 
     if ( totalClothes == 0) {
-        std::cout << "Não há conjunto de roupas inseridos! " << '\n';
+        std::cout << "Não há conjunto de roupas inseridos!\n" << '\n';
     } else {
         for(int i=0; i<totalClothes; i++) {
             std::cout << "Pedido de : " << nome[i] << '\n';
@@ -58,6 +58,27 @@ void Greed::listClothes() {
 
 
 }
+
+int Greed::getInput() {
+    while(true){
+        int valor;
+        std::cin >> valor;
+        if(std::cin.fail()){
+            std::cin.clear();
+            std::cin.ignore(32767,'\n');
+            std::cout << "Entrada inválida. Insira novamente: ";
+        }
+        else{
+            if (valor < 0) {
+                std::cout << "Entrada inválida. Insira novamente: ";
+            } else {
+            std::cin.ignore(32767,'\n');
+            return valor;
+            }
+        }
+    }
+}
+
 void Greed::init() {
     std::vector<std::pair<int,int>> clothes;
     int delay = 0;

@@ -7,7 +7,6 @@
 #include <algorithm>
 #include <string>
 
-
 constexpr int MAX {100};
 class Greed {
 public:
@@ -23,6 +22,10 @@ public:
     void insertClothes();
 
     void listClothes();
+
+    int getInput();
+
+    std::string getString();
 
     void init();
 

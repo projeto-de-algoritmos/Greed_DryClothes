@@ -8,7 +8,7 @@
 #include <string>
 
 
-constexpr int MAX {20};
+constexpr int MAX {100};
 class Greed {
 public:
     std::string nome[MAX];
@@ -21,6 +21,8 @@ public:
     ~Greed();
 
     void insertClothes();
+
+    void listClothes();
 
     void init();
 

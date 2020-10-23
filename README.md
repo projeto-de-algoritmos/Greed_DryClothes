@@ -1,45 +1,52 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
+# Greed_temp
 
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 3<br>
+**Conteúdo da Disciplina**: Greed<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0117548  |  [Bruno Carmo Nunes](https://github.com/brunocmo) |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+## Video
+
+
+
+## Sobre
+
+
+
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
-
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
+## Instalação
+**Linguagem**: C++<br>
+
+Feito e usado no kernel: **Linux 5.4.0-45-generic x86_64**
+
+Tenha o *git*, *make* e o compilador *c++* versão C++11 instalado na sua maquina.
+De preferência, para não ocorrer problemas, use o Ubuntu.
+
+Para clonar:
+
+`git clone https://github.com/projeto-de-algoritmos/`
+
+Para compilar o programa:
+
+`make`
+
+Para executar o programa:
+
+`make run`
+
+Para limpar os arquivos .o e bin do programa:
+
+`make clean`
+
+## Uso
 
 
+## Outros
+Quando executar o programa no CLI, use-o em tela cheia para melhor aproveitamento do mesmo.

@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <string>
 
+
 constexpr int MAX {20};
 class Greed {
 public:
